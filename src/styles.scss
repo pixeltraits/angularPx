@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material-experimental' as matx;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$theme: matx.define-theme((
+  color: (
+    theme-type: dark,
+    primary: matx.$m3-violet-palette,
+  ),
+  typography: (
+    brand-family: 'Arial',
+    bold-weight: 900
+  ),
+  density: (
+    scale: -1
+  )
+));

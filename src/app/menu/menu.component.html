@@ -1,0 +1,10 @@
+<nav>
+  <ol>
+    @for (menuElement of menuElements; track menuElements) {
+      <li >
+        <mat-icon>{{ menuElement.icon }}</mat-icon>
+        <span></span>
+      </li>
+    }
+  </ol>
+</nav>

@@ -1,13 +1,16 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { MenuComponent } from './menu/menu.component';
 
 @Component({
-  selector: 'app-root',
+  selector: 'apx-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, MenuComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'angular-px';
+
+
 }
